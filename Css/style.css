@@ -1,0 +1,255 @@
+.text-blue{
+    color: #0275d8;
+}
+body {
+    font-family: Monserat, sans-serif;
+}
+/*----------------------- Preloader -----------------------*/
+.preloader{
+    background-color: black;
+    background: url(../Images/ben-redblock-loading.gif) no-repeat center center /cover;
+    width: 100%;
+    z-index: 100;
+}
+
+/* header */
+
+.ban {
+    height: 100vh;
+    background: linear-gradient(-77deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+     url(../Images/pocket-watch-g3a944e548_1920.jpg) fixed 
+     no-repeat center center /cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 87%, 0 0);
+    ;
+}
+
+
+/* nav bar */
+
+#logo {
+    left: 100%;
+}
+
+.nav-menu {
+    padding: 1%;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    z-index: 1;
+    transition: all .7s;
+}
+
+.menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: white;
+    transition: color .5s;
+}
+
+.menu-item:hover {
+    color: #0275d8;
+}
+
+.nav-active {
+    color: tomato;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7));
+}
+
+
+/* banner */
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.banner-text {
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)); 
+    color: darkgrey;
+    margin: auto;
+    width: 50%;
+    top: 50%;
+    padding: 2%;
+    transition: all 0.8s ease-in-out;
+}
+
+.banner-text:hover {
+    background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0));
+    color: black;
+    margin: auto;
+    width: 50%;
+    top: 50%;
+    border-radius: 20px;
+    padding: 2%;
+    transition: all 1s ease-in-out;
+}
+@keyframes anim1 {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.banner-heading {
+    animation-name: anim1;
+    animation-duration: 2s;
+}
+
+.banner-par {
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+
+/* services */
+
+.service-card {
+    border: solid gray 0px;
+    border-radius: 2%;
+    margin: 2%;
+    transition: all 1s;
+}
+
+.service-card:hover {
+    border: solid gray 1px;
+    border-radius: 12%;
+    margin: 0%;
+    transition: all 1s;
+}
+
+.service-img {
+    border-radius: 10%;
+}
+
+.undeline {
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+}
+
+.anim2_fromleft {
+    animation-name: anim2_fromleft;
+    animation-duration: 3s;
+}
+
+.anim2_fromright {
+    animation-name: anim2_fromright;
+    animation-duration: 3s;
+}
+
+@keyframes anim2_fromleft {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes anim2_fromright {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* marcher or portfolio */
+
+
+/* pubs */
+
+.bg-pub1 {
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(255, 255, 255, .2), rgba(0, 0, 0, .1)),
+     url(../Images/pexels-kevin-menajang-982660.jpg) fixed no-repeat center center /cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.bg-pub2 {
+    height: 100vh;
+    background: url(../Images/pexels-jonathan-petersson-404181.jpg) fixed no-repeat center center /cover;
+    
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+
+/*map */
+
+.map-container-6 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-6 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* footer */
+
+.footer-link {
+    color: #eee;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.footer-link:hover {
+    color: #70ae2d;
+    text-decoration: none;
+}
+
+#copyright {
+    margin-top: 3px;
+}
+
+
+/* card page */
+
+.hover-card:hover {
+    border: solid 1px black;
+}
